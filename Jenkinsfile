@@ -2,16 +2,16 @@ pipeline {
     agent any
 
     environment {
-        AWS_REGION = 'us-west-2'  // Replace with your region
-        S3_BUCKET = 'your-s3-bucket-name'  // Replace with your S3 bucket name
-        CODEDEPLOY_APPLICATION = 'your-codedeploy-application'  // Replace with your CodeDeploy application name
-        CODEDEPLOY_DEPLOYMENT_GROUP = 'your-deployment-group'  // Replace with your CodeDeploy deployment group name
+        AWS_REGION = 'ap-south-1'  // Replace with your region
+        S3_BUCKET = 'web-server74'  // Replace with your S3 bucket name
+        CODEDEPLOY_APPLICATION = 'web-server'  // Replace with your CodeDeploy application name
+        CODEDEPLOY_DEPLOYMENT_GROUP = 'web-server-app'  // Replace with your CodeDeploy deployment group name
     }
 
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/your-repository/simple-web-server.git'
+                git 'https://github.com/rajdeepsingh642/Simple-Web-Server-Application.git'
             }
         }
 
