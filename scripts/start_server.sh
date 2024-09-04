@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Navigate to the application directory
-cd /home/ec2-user/simple-web-server
+cd /home/ubuntu/simple-web-server
 
 # Kill any existing server instances
 pkill -f simple_web_server.py || true
