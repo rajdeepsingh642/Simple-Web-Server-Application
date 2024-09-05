@@ -3,7 +3,13 @@ os: linux
 files:
   - source: /
     destination: /home/ubuntu/simple-web-server
-
+permissions:
+  - object: scripts/start_server.sh
+    owner: root
+    group: root
+    mode: 755
+    type:
+      - file
 hooks:
   AfterInstall:
     - location: scripts/start_server.sh
