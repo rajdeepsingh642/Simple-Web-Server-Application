@@ -7,4 +7,4 @@ cd /home/ubuntu/simple-web-server
 pkill -f simple_web_server.py || true
 
 # Start the web server
-nohup python3 simple_web_server.py &
+python3 simple_web_server.py &
